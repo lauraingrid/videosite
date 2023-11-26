@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 15px;
+}
+
+video {
+  max-width: 800px;
+  max-height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 15px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 7rem;
+}
+
+@media (min-width: 800px) {
+  .fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img {
+    min-width: 500px;
+    min-height: 500px;
+  }
+}
